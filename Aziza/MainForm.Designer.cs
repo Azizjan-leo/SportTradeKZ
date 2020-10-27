@@ -29,35 +29,59 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.AddContractorBtn = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.контрагентыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AddContractorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // AddContractorBtn
+            // menuStrip1
             // 
-            this.AddContractorBtn.Location = new System.Drawing.Point(669, 13);
-            this.AddContractorBtn.Name = "AddContractorBtn";
-            this.AddContractorBtn.Size = new System.Drawing.Size(112, 23);
-            this.AddContractorBtn.TabIndex = 0;
-            this.AddContractorBtn.Text = "Новый контрагент";
-            this.AddContractorBtn.UseVisualStyleBackColor = true;
-            this.AddContractorBtn.Click += new System.EventHandler(this.AddContractorBtn_Click);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.контрагентыToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // контрагентыToolStripMenuItem
+            // 
+            this.контрагентыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AddContractorToolStripMenuItem});
+            this.контрагентыToolStripMenuItem.Name = "контрагентыToolStripMenuItem";
+            this.контрагентыToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.контрагентыToolStripMenuItem.Text = "Контрагенты";
+            // 
+            // AddContractorToolStripMenuItem
+            // 
+            this.AddContractorToolStripMenuItem.Name = "AddContractorToolStripMenuItem";
+            this.AddContractorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.AddContractorToolStripMenuItem.Text = "Добавить";
+            this.AddContractorToolStripMenuItem.Click += new System.EventHandler(this.добавитьToolStripMenuItem_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.AddContractorBtn);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "Aziza";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button AddContractorBtn;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem контрагентыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AddContractorToolStripMenuItem;
     }
 }
 

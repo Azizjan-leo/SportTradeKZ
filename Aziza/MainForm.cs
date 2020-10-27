@@ -16,7 +16,7 @@ namespace Aziza
             InitializeComponent();
         }
 
-        private void AddContractorBtn_Click(object sender, EventArgs e)
+        private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var contractorForm = new ContractorForm();
             contractorForm.Show();

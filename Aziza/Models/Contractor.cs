@@ -14,6 +14,7 @@ namespace Aziza.Models
         public string RealAddress { get; set; }
         public string LegalAddress { get; set; }
     }
+
     public class LEContr : BaseContractor // Юр лицо
     {
         public string KBe { get; set; }
@@ -23,6 +24,5 @@ namespace Aziza.Models
     public class IndContr : BaseContractor // Физ лицо
     {
         public string Document { get; set; }
-        public string SIK { get; set; }
     }
 }
