@@ -16,5 +16,19 @@ namespace Aziza
         {
             InitializeComponent();
         }
+
+        private void IsIndContrChBx_CheckedChanged(object sender, EventArgs e)
+        {
+            if(((CheckBox)sender).Checked)
+            {
+                NameLbl.Text = "Наименование";
+                FullNameLbl.Text = "Полное наименование";
+            }
+            else
+            {
+                NameLbl.Text = "Имя";
+                FullNameLbl.Text = "Полное имя";
+            }
+        }
     }
 }
